@@ -1,0 +1,1699 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "malibu",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help me",
+            "how can i add products"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop",
+            "quit"
+          ]
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "asml"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "additemIntent",
+          "slots": [
+            {
+              "name": "quantity",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{quantity} quantity",
+                "{quantity}"
+              ]
+            },
+            {
+              "name": "itemid",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{itemid}  item",
+                "{itemid} "
+              ]
+            }
+          ],
+          "samples": [
+            "add {quantity} of {itemid}",
+            " {quantity} {itemid}",
+            "add {quantity} quantity of {itemid}",
+            "add {quantity} {itemid}"
+          ]
+        },
+        {
+          "name": "removeitemIntent",
+          "slots": [
+            {
+              "name": "quantity",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{quantity}",
+                "{quantity} quantity"
+              ]
+            },
+            {
+              "name": "itemid",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{itemid} ",
+                "{itemid} item"
+              ]
+            }
+          ],
+          "samples": [
+            "{quantity} {itemid}",
+            "remove {quantity} quantity of {itemid}",
+            "remove {quantity}  {itemid}"
+          ]
+        },
+        {
+          "name": "resetorderIntent",
+          "slots": [],
+          "samples": [
+            "remove all orders from list",
+            "clear my order list",
+            "reset order list",
+            "clear all items",
+            "clear my order",
+            "reset order"
+          ]
+        },
+        {
+          "name": "completeorderIntent",
+          "slots": [],
+          "samples": [
+            "commit order",
+            "order confirm",
+            "order done",
+            "i am done ordering",
+            "confirm my order",
+            "confirm order",
+            "complete order"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "yup",
+            "yes",
+            "yes please"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "nope",
+            "no"
+          ]
+        },
+        {
+          "name": "billorderIntent",
+          "slots": [],
+          "samples": [
+            "bill please",
+            "give my bill",
+            "ordering finish give my bill",
+            "ask for bill"
+          ]
+        },
+        {
+          "name": "showorderIntent",
+          "slots": [],
+          "samples": [
+            "how many products I have entered in my orderlist",
+            "how many products I have entered",
+            "what is my order list",
+            "show orderlist",
+            "show order",
+            "show products i have entered",
+            "show my order"
+          ]
+        },
+        {
+          "name": "orderstatusIntent",
+          "slots": [],
+          "samples": [
+            "check status",
+            "give status of order",
+            "what is my order status",
+            "show my order status",
+            "check order status",
+            "check my order status"
+          ]
+        },
+        {
+          "name": "itemstatusIntent",
+          "slots": [
+            {
+              "name": "itemid",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "check status of {itemid}",
+                "{itemid}"
+              ]
+            }
+          ],
+          "samples": [
+            "check status of {itemid}",
+            "check item {itemid}",
+            "give status of {itemid}",
+            "please check status of {itemid}",
+            "check status {itemid}",
+            "show status of {itemid}",
+            "what is the status of {itemid}"
+          ]
+        },
+        {
+          "name": "setwelcomeIntent",
+          "slots": [],
+          "samples": [
+            "set welcome",
+            "welcome message one",
+            "set welcome message"
+          ]
+        },
+        {
+          "name": "productidIntent",
+          "slots": [
+            {
+              "name": "itemname",
+              "type": "itemname"
+            }
+          ],
+          "samples": [
+            "give me the id of {itemname}",
+            "id of {itemname}",
+            "tell me the id of {itemname}",
+            "what is the id of {itemname}"
+          ]
+        },
+        {
+          "name": "idname",
+          "slots": [
+            {
+              "name": "itemid",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "name of {itemid}",
+            "give me name of {itemid}",
+            "tell me the name of {itemid}",
+            "what is the name of {itemid}"
+          ]
+        },
+        {
+          "name": "howtoremoveintent",
+          "slots": [],
+          "samples": [
+            "how can I remove product",
+            "How can i remove items from orderlist",
+            "what to say if i want to remove something from  my order list",
+            "for remove what to say ",
+            "help me to remove product"
+          ]
+        },
+        {
+          "name": "howtoaddintent",
+          "slots": [],
+          "samples": [
+            "help me to add product",
+            "for add what to say",
+            "what to say if i want to add something in  my order list",
+            "How can i add items in  orderlist",
+            "how can I add product"
+          ]
+        },
+        {
+          "name": "howtoshowintent",
+          "slots": [],
+          "samples": [
+            "help me to show productlist",
+            "for show what to say",
+            "what to say if i want to see  my order list",
+            "help me to show order",
+            "how can I show my order"
+          ]
+        },
+        {
+          "name": "howtoresetintent",
+          "slots": [],
+          "samples": [
+            "help me to reset orderlist",
+            "how can I reset product",
+            "How can i reset items from orderlist",
+            "what to say if i want to reset   my order list",
+            "for reset what to say",
+            "help me to reset product"
+          ]
+        },
+        {
+          "name": "howtoconfirm",
+          "slots": [],
+          "samples": [
+            "how can i confirm my order",
+            "help me to confirm order",
+            "help me to confirm product",
+            "for confirm what to say",
+            "what to say if i want confirm    my order list",
+            "How can i confirm items from orderlist",
+            "how can I confirm product"
+          ]
+        },
+        {
+          "name": "howtoallstatusintent",
+          "slots": [],
+          "samples": [
+            "how can i check order status",
+            "for status what to say",
+            "help me to show product status",
+            "what to say if i want to show status",
+            "how i can show status of my order",
+            "how can i see status"
+          ]
+        },
+        {
+          "name": "howtoitemstatusintent",
+          "slots": [],
+          "samples": [
+            "how to check item status",
+            "help me to see item status of product",
+            "what to say if i want to show status of particular item id",
+            "for item status what to say"
+          ]
+        },
+        {
+          "name": "howtobillintent",
+          "slots": [],
+          "samples": [
+            "what to say if i want my bill",
+            "for bill what should i say",
+            "how can i get my bill",
+            "how can i ask for bill",
+            "help me to get my bill"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Mashroom Noodles"
+              }
+            },
+            {
+              "name": {
+                "value": "Chinese ChopSuey"
+              }
+            },
+            {
+              "name": {
+                "value": "American ChopSuey"
+              }
+            },
+            {
+              "name": {
+                "value": "Schezwan Noodles"
+              }
+            },
+            {
+              "name": {
+                "value": "Singapuri Noodles"
+              }
+            },
+            {
+              "name": {
+                "value": "Chinese Bhel"
+              }
+            },
+            {
+              "name": {
+                "value": "Manchurian Noodles"
+              }
+            },
+            {
+              "name": {
+                "value": "Hakka Noodles"
+              }
+            },
+            {
+              "name": {
+                "value": "Exotica Veg.Sizzler"
+              }
+            },
+            {
+              "name": {
+                "value": "Chinese Sizzler"
+              }
+            },
+            {
+              "name": {
+                "value": "Mix Veg.Sizzler"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Tikka Sizzler"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Tripple Fried Rice"
+              }
+            },
+            {
+              "name": {
+                "value": "Mashroom Fried Rice"
+              }
+            },
+            {
+              "name": {
+                "value": "Singapuri Fried Rice"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Fried Rice With Combo"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Schezwan Fried Rice"
+              }
+            },
+            {
+              "name": {
+                "value": "Garlic Fried Rice"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Fried Rice"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Spring Roll"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Chilly"
+              }
+            },
+            {
+              "name": {
+                "value": "Mashroom Chilly Dry"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Lollypop"
+              }
+            },
+            {
+              "name": {
+                "value": "Baby Corn Chilly Dry"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.65"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Cripsy"
+              }
+            },
+            {
+              "name": {
+                "value": "Manchurian"
+              }
+            },
+            {
+              "name": {
+                "value": "Chilly Potato"
+              }
+            },
+            {
+              "name": {
+                "value": "Tom yum Soup"
+              }
+            },
+            {
+              "name": {
+                "value": "Cream Of Spinach Soup"
+              }
+            },
+            {
+              "name": {
+                "value": "Minestrone Soup"
+              }
+            },
+            {
+              "name": {
+                "value": "Lemon Coriander Soup"
+              }
+            },
+            {
+              "name": {
+                "value": "Hot And Sour Soup"
+              }
+            },
+            {
+              "name": {
+                "value": "Manchow Soup"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Soup"
+              }
+            },
+            {
+              "name": {
+                "value": "Sweet Corn Soup"
+              }
+            },
+            {
+              "name": {
+                "value": "Tomato Soup"
+              }
+            },
+            {
+              "name": {
+                "value": "Aloo Paratha With Curd"
+              }
+            },
+            {
+              "name": {
+                "value": "Missi Roti"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Kulcha"
+              }
+            },
+            {
+              "name": {
+                "value": "Stuffed Kulcha"
+              }
+            },
+            {
+              "name": {
+                "value": "Onion Kulcha"
+              }
+            },
+            {
+              "name": {
+                "value": "Butter Kulcha"
+              }
+            },
+            {
+              "name": {
+                "value": "Plain Kulcha"
+              }
+            },
+            {
+              "name": {
+                "value": "Stuffed Naan"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Chilly Garlic Naan"
+              }
+            },
+            {
+              "name": {
+                "value": "Garlic Naan"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Naan"
+              }
+            },
+            {
+              "name": {
+                "value": "Butter Naan"
+              }
+            },
+            {
+              "name": {
+                "value": "Plain Naan"
+              }
+            },
+            {
+              "name": {
+                "value": "Butter Lachha Paratha"
+              }
+            },
+            {
+              "name": {
+                "value": "Lachha Paratha"
+              }
+            },
+            {
+              "name": {
+                "value": "Butter Tandoori"
+              }
+            },
+            {
+              "name": {
+                "value": "Plain Tandoori"
+              }
+            },
+            {
+              "name": {
+                "value": "Malibu Sp.Paneer Veg.Masala"
+              }
+            },
+            {
+              "name": {
+                "value": "Panner Angara"
+              }
+            },
+            {
+              "name": {
+                "value": "Panner Baby Corn Masala"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Butter Masala"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Chatpata"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Mashroom Masala"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Tikka Masala"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Lababdar"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Amritsari"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Cheese Butter Masala"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Do Pyaza"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Kadhai"
+              }
+            },
+            {
+              "name": {
+                "value": "Palak Paneer"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Butter Masala"
+              }
+            },
+            {
+              "name": {
+                "value": "Malibu Sp.Lassi"
+              }
+            },
+            {
+              "name": {
+                "value": "Strawberry Lassi"
+              }
+            },
+            {
+              "name": {
+                "value": "Mango Lassi"
+              }
+            },
+            {
+              "name": {
+                "value": "Lassi"
+              }
+            },
+            {
+              "name": {
+                "value": "Masala Butter Milk"
+              }
+            },
+            {
+              "name": {
+                "value": "Butter Milk"
+              }
+            },
+            {
+              "name": {
+                "value": "Malibu Sp.Kaju Lasaniya"
+              }
+            },
+            {
+              "name": {
+                "value": "kaju Masala"
+              }
+            },
+            {
+              "name": {
+                "value": "Kaju Curry"
+              }
+            },
+            {
+              "name": {
+                "value": "Khoya Kaju"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Mashroom Masala"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Angara"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Lasaniya"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Hyderabadi"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Diwani Handi"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Tawa Masala"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Kolhapuri"
+              }
+            },
+            {
+              "name": {
+                "value": "Dum Aloo Banarasi"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Handi"
+              }
+            },
+            {
+              "name": {
+                "value": "Mix Veg."
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Hariyali Tadka"
+              }
+            },
+            {
+              "name": {
+                "value": "Navratna Korma"
+              }
+            },
+            {
+              "name": {
+                "value": "Malai Kofta"
+              }
+            },
+            {
+              "name": {
+                "value": "Nargis Kofta"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Kofta"
+              }
+            },
+            {
+              "name": {
+                "value": "Malibu Tandoori Platter"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Malai Tikka Dry"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Pahadi Tikka Dry"
+              }
+            },
+            {
+              "name": {
+                "value": "Tandoori Mashroom Tikka"
+              }
+            },
+            {
+              "name": {
+                "value": "Achari Paneer Tikka"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Tikka Dry"
+              }
+            },
+            {
+              "name": {
+                "value": "Stuffed Potatoes"
+              }
+            },
+            {
+              "name": {
+                "value": "Hara Bhara Kabab"
+              }
+            },
+            {
+              "name": {
+                "value": "Dahi kabab"
+              }
+            },
+            {
+              "name": {
+                "value": "Corn Tikki"
+              }
+            },
+            {
+              "name": {
+                "value": "Dry fruits Sweet Pizza"
+              }
+            },
+            {
+              "name": {
+                "value": "Paneer Pahadi Pizza"
+              }
+            },
+            {
+              "name": {
+                "value": "Malibu Special Pizza"
+              }
+            },
+            {
+              "name": {
+                "value": "Diavola White Sauce Pizza"
+              }
+            },
+            {
+              "name": {
+                "value": "Quattro Formaggi 11 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Quattro Formaggi 7 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Pugliese 11 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Pugliese 7 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Cipolle E Parmigiano 11 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Cipolle E Parmigiano 7 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Tandori Paneer Pizza 11 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Tandori Paneer Pizza 7 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Pomodori Secchi 11 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Pomodori Secchi 7 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Ortolana 11 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Ortolana 7 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Vegetariana 11 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Vegetariana 7 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Fungi 11 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Fungi 7 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Margherita 11 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Margherita 7 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Malibu Pizza 11 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Malibu Pizza 7 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Calabrese 11 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Calabrese 7 inch"
+              }
+            },
+            {
+              "name": {
+                "value": "Fusili Pasta With Arrabbiata Sauce"
+              }
+            },
+            {
+              "name": {
+                "value": "Mix Pasta With Pestro Sauce"
+              }
+            },
+            {
+              "name": {
+                "value": "Spinach Lasagna"
+              }
+            },
+            {
+              "name": {
+                "value": "Penne Pasta With Red Sauce"
+              }
+            },
+            {
+              "name": {
+                "value": "Penne Mashroom With White Sauce"
+              }
+            },
+            {
+              "name": {
+                "value": "Spaghetti Al Pomodoro"
+              }
+            },
+            {
+              "name": {
+                "value": "Penne Pasta With Broccoli\u0026Pink Sauce"
+              }
+            },
+            {
+              "name": {
+                "value": "Lasagna Bianca"
+              }
+            },
+            {
+              "name": {
+                "value": "Malibu Sp. Veg.Lasagna"
+              }
+            },
+            {
+              "name": {
+                "value": "Roast Potato With Pesto Souce"
+              }
+            },
+            {
+              "name": {
+                "value": "Lattuga E Bocconcini"
+              }
+            },
+            {
+              "name": {
+                "value": "Caprese"
+              }
+            },
+            {
+              "name": {
+                "value": "Mista"
+              }
+            },
+            {
+              "name": {
+                "value": "Greek Salad"
+              }
+            },
+            {
+              "name": {
+                "value": "Creamy Potato"
+              }
+            },
+            {
+              "name": {
+                "value": "Corn Cheese Salad"
+              }
+            },
+            {
+              "name": {
+                "value": "Pasta Salad"
+              }
+            },
+            {
+              "name": {
+                "value": "Patate"
+              }
+            },
+            {
+              "name": {
+                "value": "Russian Salad"
+              }
+            },
+            {
+              "name": {
+                "value": "AntiPasti"
+              }
+            },
+            {
+              "name": {
+                "value": "Verdure Grigliate"
+              }
+            },
+            {
+              "name": {
+                "value": "Panzerotti"
+              }
+            },
+            {
+              "name": {
+                "value": "Garlic Bread With Cheese"
+              }
+            },
+            {
+              "name": {
+                "value": "Garlic Bread"
+              }
+            },
+            {
+              "name": {
+                "value": "Nachos With Topping"
+              }
+            },
+            {
+              "name": {
+                "value": "Spanish Bruschetta"
+              }
+            },
+            {
+              "name": {
+                "value": "Barbeque French fries"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese French fries"
+              }
+            },
+            {
+              "name": {
+                "value": "French fries"
+              }
+            },
+            {
+              "name": {
+                "value": "Sizzling Brownie With Ice Cream"
+              }
+            },
+            {
+              "name": {
+                "value": "Sizzling Brownie"
+              }
+            },
+            {
+              "name": {
+                "value": "Angloletti"
+              }
+            },
+            {
+              "name": {
+                "value": "Chocolate Ice Cream"
+              }
+            },
+            {
+              "name": {
+                "value": "Strawberry Ice Cream"
+              }
+            },
+            {
+              "name": {
+                "value": "Vanila Ice Cream"
+              }
+            },
+            {
+              "name": {
+                "value": "Green Valley"
+              }
+            },
+            {
+              "name": {
+                "value": "Pink Lady"
+              }
+            },
+            {
+              "name": {
+                "value": "Green Apple Mojito"
+              }
+            },
+            {
+              "name": {
+                "value": "Cool Pool Blue "
+              }
+            },
+            {
+              "name": {
+                "value": "Guava Brazer"
+              }
+            },
+            {
+              "name": {
+                "value": "Red Diffender"
+              }
+            },
+            {
+              "name": {
+                "value": "Orange Sunshine"
+              }
+            },
+            {
+              "name": {
+                "value": "Cool Blue"
+              }
+            },
+            {
+              "name": {
+                "value": "Mint Mojito"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Burger"
+              }
+            },
+            {
+              "name": {
+                "value": "Burger"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Maggi"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg Maggi"
+              }
+            },
+            {
+              "name": {
+                "value": "Masala Maggi"
+              }
+            },
+            {
+              "name": {
+                "value": "Malibu Sp Club Sandwich"
+              }
+            },
+            {
+              "name": {
+                "value": "Coleshaw Sandwich"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Chilly Garlic Toast"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Chilly Toast"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Grilled"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Cheese Grilled Sandwich"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Grilled Sandwich"
+              }
+            },
+            {
+              "name": {
+                "value": "Cheese Sandwich"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Cheese Sandwich"
+              }
+            },
+            {
+              "name": {
+                "value": "Veg.Sandwich"
+              }
+            },
+            {
+              "name": {
+                "value": "Bread Butter jam"
+              }
+            },
+            {
+              "name": {
+                "value": "Bread Butter"
+              }
+            },
+            {
+              "name": {
+                "value": "Oreo Milkshake"
+              }
+            },
+            {
+              "name": {
+                "value": "Kit Kat Milkshake"
+              }
+            },
+            {
+              "name": {
+                "value": "Kaju anjeer Milkshake"
+              }
+            },
+            {
+              "name": {
+                "value": "Chocolate Milkshake"
+              }
+            },
+            {
+              "name": {
+                "value": "Kaju Milkshake"
+              }
+            },
+            {
+              "name": {
+                "value": "Vanila Milkshake"
+              }
+            },
+            {
+              "name": {
+                "value": "Strawberry Milkshake"
+              }
+            },
+            {
+              "name": {
+                "value": "Black Current Milkshake"
+              }
+            },
+            {
+              "name": {
+                "value": "Guava Milkshake"
+              }
+            },
+            {
+              "name": {
+                "value": "Mango Milkshake"
+              }
+            },
+            {
+              "name": {
+                "value": "Cold Coffee With Icecream"
+              }
+            },
+            {
+              "name": {
+                "value": "Cold Coffee"
+              }
+            },
+            {
+              "name": {
+                "value": "Bournvita"
+              }
+            },
+            {
+              "name": {
+                "value": "Hot Milk"
+              }
+            },
+            {
+              "name": {
+                "value": "coffee"
+              }
+            },
+            {
+              "name": {
+                "value": "Tea"
+              }
+            }
+          ],
+          "name": "itemname"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "additemIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "quantity",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.426194050474.1236314145216"
+              },
+              "validations": [
+                {
+                  "type": "isLessThan",
+                  "prompt": "Slot.Validation.426194050474.1236314145216.760780549209",
+                  "value": "30"
+                },
+                {
+                  "type": "isGreaterThan",
+                  "prompt": "Slot.Validation.426194050474.1236314145216.340463184616",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "name": "itemid",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1299140386124.808537903734"
+              },
+              "validations": [
+                {
+                  "type": "isLessThan",
+                  "prompt": "Slot.Validation.1299140386124.808537903734.1462190819884",
+                  "value": "207"
+                },
+                {
+                  "type": "isGreaterThan",
+                  "prompt": "Slot.Validation.1299140386124.808537903734.1143182629599",
+                  "value": "0"
+                }
+              ]
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "removeitemIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "quantity",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.913042099348.853457852593"
+              },
+              "validations": [
+                {
+                  "type": "isLessThan",
+                  "prompt": "Slot.Validation.913042099348.853457852593.1554567781378",
+                  "value": "30"
+                },
+                {
+                  "type": "isGreaterThan",
+                  "prompt": "Slot.Validation.913042099348.853457852593.479598697303",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "name": "itemid",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.913042099348.1539236367206"
+              },
+              "validations": [
+                {
+                  "type": "isLessThan",
+                  "prompt": "Slot.Validation.913042099348.1539236367206.1075725286667",
+                  "value": "207"
+                },
+                {
+                  "type": "isGreaterThan",
+                  "prompt": "Slot.Validation.913042099348.1539236367206.427712950291",
+                  "value": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "itemstatusIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "itemid",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.954223782161.916563064808"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.426194050474.1236314145216",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "how much quantity"
+          },
+          {
+            "type": "PlainText",
+            "value": "specify quantity "
+          },
+          {
+            "type": "PlainText",
+            "value": "i am having trouble for getting quantity "
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.426194050474.1236314145216.760780549209",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "{quantity} is not a valid quantity,  please change value"
+          },
+          {
+            "type": "PlainText",
+            "value": "Please specify less quantity"
+          },
+          {
+            "type": "PlainText",
+            "value": "Sorry you cannot order {quantity} quantity "
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.426194050474.1236314145216.340463184616",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry you cannot order {quantity} quantity "
+          },
+          {
+            "type": "PlainText",
+            "value": "Please specify less quantity"
+          },
+          {
+            "type": "PlainText",
+            "value": "{quantity} is not a valid quantity,  please change value"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.913042099348.853457852593",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "please specify quantity"
+          },
+          {
+            "type": "PlainText",
+            "value": "i am having trouble for getting item id "
+          },
+          {
+            "type": "PlainText",
+            "value": "define quantity"
+          },
+          {
+            "type": "PlainText",
+            "value": "how much quantity "
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.913042099348.853457852593.1554567781378",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry you cannot remove {quantity} quantity"
+          },
+          {
+            "type": "PlainText",
+            "value": "Please specify less quantity"
+          },
+          {
+            "type": "PlainText",
+            "value": "{quantity} is not a valid quantity,  please change value"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.913042099348.853457852593.479598697303",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry you cannot remove {quantity} quantity"
+          },
+          {
+            "type": "PlainText",
+            "value": "Please specify more quantity"
+          },
+          {
+            "type": "PlainText",
+            "value": "{quantity} is not a valid quantity,  please change value"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.913042099348.1539236367206",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "please say item ID given aside of your item "
+          },
+          {
+            "type": "PlainText",
+            "value": "insted of item name please say its ID "
+          },
+          {
+            "type": "PlainText",
+            "value": "please spacify item ID"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.913042099348.1539236367206.1075725286667",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "{itemid} is not a valid id,  please change value"
+          },
+          {
+            "type": "PlainText",
+            "value": "Please specify a valid item id"
+          },
+          {
+            "type": "PlainText",
+            "value": "Sorry you cannot order {itemid}  item id"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.913042099348.1539236367206.427712950291",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry you cannot order {itemid}  item id"
+          },
+          {
+            "type": "PlainText",
+            "value": "Please specify a valid item id"
+          },
+          {
+            "type": "PlainText",
+            "value": "{itemid} is not a valid id,  please change value"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1299140386124.808537903734",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "please say item ID given aside of your item "
+          },
+          {
+            "type": "PlainText",
+            "value": "insted of item name please say its ID "
+          },
+          {
+            "type": "PlainText",
+            "value": "please spacify item ID"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1299140386124.808537903734.1462190819884",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry you cannot order {itemid}  item id"
+          },
+          {
+            "type": "PlainText",
+            "value": "Please specify a valid item id"
+          },
+          {
+            "type": "PlainText",
+            "value": "{itemid} is not a valid id,  please change value"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1299140386124.808537903734.1143182629599",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "{itemid} is not a valid id,  please change value"
+          },
+          {
+            "type": "PlainText",
+            "value": "Please specify a valid item id"
+          },
+          {
+            "type": "PlainText",
+            "value": "Sorry you cannot order {itemid}  item id"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.954223782161.916563064808",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "status for which item id ?"
+          },
+          {
+            "type": "PlainText",
+            "value": "please specify item id "
+          }
+        ]
+      }
+    ]
+  },
+  "version": "41"
+}
